@@ -5,7 +5,7 @@ import img02 from "@/public/leash-token.png";
 import img03 from "@/public/bone-token.png";
 import Banneer from "@/components/Banneer"
 import ShibaSwapPage from "@/components/ShibaSwap";
-
+import ShiboshisBanner from "@/components/Shiboshis";
 export default function Home() {
 	return (
 		<>
@@ -53,6 +53,11 @@ The Metaverse land sales."
 
 			<div className="w-[100%] mx-auto mt-12"> 
                  <ShibaSwapPage/>
+
+			</div>
+           
+			<div className="w-[100%] mx-auto mt-12"> 
+                 <ShiboshisBanner/>
 
 			</div>
 
