@@ -2,24 +2,27 @@ import React from 'react';
 
 const MagazineBanner: React.FC = () => {
   return (
-    <div className="relative bg-black w-full h-[300px] flex items-center justify-between overflow-hidden rounded-3xl p-6">
+    <div 
+      className="relative bg-slate-950 w-full h-[300px] flex items-center justify-between overflow-hidden rounded-3xl p-6"
+      style={{ backgroundImage: 'url(/doggy.avif)', backgroundSize: 'cover', backgroundPosition: 'center 27%' }}
+    >
       {/* Magazine Covers Background */}
       <div className="absolute inset-0 opacity-20 flex space-x-4 items-center justify-end pr-12">
-        <img 
+        {/* <img 
           src="/api/placeholder/200/300" 
           alt="Magazine Cover 1" 
           className="transform rotate-[-10deg] h-48 shadow-lg rounded-2xl" 
-        />
-        <img 
-          src="/api/placeholder/200/300" 
+        /> */}
+        {/* <img 
+          src="/theshib-logo.svg" 
           alt="Magazine Cover 2" 
-          className="transform rotate-[5deg] h-56 shadow-lg rounded-2xl" 
-        />
-        <img 
+          className=" h-13 shadow-lg rounded-2xl" 
+        /> */}
+        {/* <img 
           src="/api/placeholder/200/300" 
           alt="Magazine Cover 3" 
           className="transform rotate-[-5deg] h-48 shadow-lg rounded-2xl"
-        />
+        /> */}
       </div>
 
       {/* Logo */}

@@ -51,7 +51,7 @@ const ShibariumComponent: React.FC = () => {
 					<div className="flex items-center mb-4">
 						<div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-4">
 							<img
-								src="/icons/bone-icon.svg"
+								src="/stake.svg"
 								alt="Stake Bone Icon"
 								className="h-6"
 							/>
@@ -77,7 +77,7 @@ const ShibariumComponent: React.FC = () => {
 					<div className="flex items-center mb-4">
 						<div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-4">
 							<img
-								src="/icons/bridge-icon.svg"
+								src="/bridge.svg"
 								alt="Bridge Tokens Icon"
 								className="h-6"
 							/>

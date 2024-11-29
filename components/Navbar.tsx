@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logoji from "@/public/logo.jpg";
+import logoji from "@/public/shib-token.png";
 
 interface NavbarProps {
 	logo?: string;

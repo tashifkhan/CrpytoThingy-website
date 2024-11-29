@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ShibaswapSection = () => {
   return (
-    <div className="bg-black text-white py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-12">
+    <div className="bg-slate-950 text-white py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-12">
       {/* Left Section */}
       <div className="flex flex-col gap-6 w-full md:w-3/5">
         <h2 className="text-3xl font-bold">Shibaswap</h2>
@@ -10,9 +10,9 @@ const ShibaswapSection = () => {
         <div className="flex flex-col gap-4">
           {/* Reusable Row Component */}
           {[
-            { title: "Bury", description: "Stake and Earn Rewards", icon: "/icons/bury-icon.png" },
-            { title: "Swap", description: "Between tokens", icon: "/icons/swap-icon.png" },
-            { title: "DIG", description: "Stake Tokens", icon: "/icons/dig-icon.png" },
+            { title: "Bury", description: "Stake and Earn Rewards", icon: "/bury-logo.svg" },
+            { title: "Swap", description: "Between tokens", icon: "/swap-logo.svg" },
+            { title: "DIG", description: "Stake Tokens", icon: "/dig-logo.svg" },
           ].map((item, index) => (
             <div
               key={index}

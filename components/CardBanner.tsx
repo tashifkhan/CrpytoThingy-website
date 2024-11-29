@@ -28,7 +28,7 @@ export default function CardBanner() {
             empowers Shib Army's voting in the
             Doggy DAO and underpins Shibarium,
             our proprietary Layer 2 network.`,
-					imageSrc: img02,
+					imageSrc: img03,
 					link: "/insurance",
 					buttonText: "Buy BONE",
 				},
@@ -40,7 +40,7 @@ export default function CardBanner() {
             like BONE rewards, Shiboshi NFT
             minting access, and early entry to Shib:
             The Metaverse land sales.`,
-					imageSrc: img03,
+					imageSrc: img02,
 					link: "/yield",
 					buttonText: "Buy LEASH",
 				},
