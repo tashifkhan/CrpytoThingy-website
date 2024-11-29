@@ -14,7 +14,7 @@ export default function Hero() {
 				}}
 			></div>
 			<div className="relative z-10 flex flex-col items-center">
-				<h1 className="text-3xl font-bold mt-[12rem] text-slate-400">
+				<h1 className="text-7xl font-bold mt-[12rem] text-slate-400">
 					{"Shiba Inu Tokens".toLocaleUpperCase()}
 				</h1>
 				<CardBanner />

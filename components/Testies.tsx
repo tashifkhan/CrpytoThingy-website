@@ -1,6 +1,6 @@
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import cover01 from "@/public/Cover---Bone-Army-Rises.png";
-import cover02 from "@/public/Cover--1-.jpeg";
+import cover02 from "@/public/Cover--1.jpeg";
 import cover03 from "@/public/Cover-official.png";
 import { StaticImageData } from "next/image";
 
