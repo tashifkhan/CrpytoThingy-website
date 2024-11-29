@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 const ShiboshisBanner = () => {
+
   const imageRef = useRef(null); // Ref to target the image element
   const [isVisible, setIsVisible] = useState(false); // State to track visibility
 
@@ -78,6 +79,7 @@ const ShiboshisBanner = () => {
       </div>
     </div>
   );
+
 };
 
 export default ShiboshisBanner;
