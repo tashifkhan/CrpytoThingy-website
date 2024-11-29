@@ -10,6 +10,19 @@ export default function Home() {
 			<Hero />
 			<ShibariumComponent />
 			<AnimatedTestimonialsDemo />
+<div className="w-[80%] mx-auto mt-12">
+				<Banneer />
+			</div>
+
+			<div className="w-[100%] mx-auto mt-12"> 
+                 <ShibaSwapPage/>
+
+			</div>
+           
+			<div className="w-[100%] mx-auto mt-12"> 
+                 <ShiboshisBanner/>
+
+			</div>
 		</>
 	);
 }
