@@ -27,20 +27,6 @@ export function AnimatedTestimonialsDemo() {
 			designation: "",
 			src: (cover03 as StaticImageData).src,
 		},
-		{
-			quote:
-				"Exceptional reporting and robust market analysis. It's rare to find a crypto magazine that delivers on all fronts.",
-			name: "James Kim",
-			designation: "Market Strategist at CryptoPro",
-			src: (cover01 as StaticImageData).src,
-		},
-		{
-			quote:
-				"The magazine's scalability and in-depth research have been game-changing for our organization. A vital asset for anyone in blockchain.",
-			name: "Lisa Thompson",
-			designation: "VP of Research at FutureCrypto",
-			src: (cover02 as StaticImageData).src,
-		},
 	];
 	return <AnimatedTestimonials testimonials={testimonials} />;
 }
