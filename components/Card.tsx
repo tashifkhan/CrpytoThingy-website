@@ -54,7 +54,7 @@ export function Card({
 					{/* Link */}
 					<CardItem
 						translateZ={20}
-						as={Link}
+						as={Link}  
 						href={link}
 						target=""
 						className="px-3 py-1 rounded-xl text-xs font-normal text-white"

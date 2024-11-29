@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 
 const ShibaswapSection = () => {
+
 	const [isClient, setIsClient] = useState(false);
 	const { ref, inView } = useInView({
 		triggerOnce: true,

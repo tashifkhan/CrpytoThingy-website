@@ -1,8 +1,12 @@
 import React from "react";
 
 const MagazineBanner: React.FC = () => {
+
+
 	return (
-		<div className="relative bg-slate-700 w-full h-[300px] flex items-center justify-between overflow-hidden rounded-3xl p-6">
+		<div className="relative bg-slate-700 w-full h-[300px] flex items-center justify-between overflow-hidden rounded-3xl p-6"
+      style={{ backgroundImage: 'url(/doggy.avif)', backgroundSize: 'cover', backgroundPosition: 'center 27%' }}
+      >
 			{/* Magazine Covers Background */}
 			<div className="absolute inset-0 opacity-20 flex space-x-4 items-center justify-end pr-12">
 				<img
@@ -21,6 +25,7 @@ const MagazineBanner: React.FC = () => {
 					className="transform rotate-[-5deg] h-48 shadow-lg rounded-2xl"
 				/>
 			</div>
+
 
 			{/* Logo */}
 			<div className="absolute top-6 left-6 flex items-center space-x-2">

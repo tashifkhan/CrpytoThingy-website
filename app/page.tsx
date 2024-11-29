@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import Banneer from "@/components/Banneer";
 import ShibaSwapPage from "@/components/ShibaSwap";
 import ShiboshisBanner from "@/components/Shiboshis";
-
+import Footer from "@/components/Footer";
 export default function Home() {
 	return (
 		<>
@@ -20,6 +20,7 @@ export default function Home() {
 			</div>
 			<ShibariumComponent />
 			<AnimatedTestimonialsDemo />
+			<Footer/>
 		</>
 	);
 }
