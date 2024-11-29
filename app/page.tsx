@@ -9,7 +9,7 @@ export default function Home() {
 		<>
 			<div className="mt-[4.2rem] md:flex md:flex-wrap md:gap-12 md:justify-center pt-6 flex-row">
 				<Card
-					title="token 01"
+					title="SHIB TOKEN"
 					description="Shiba Inu (SHIB) is our key token,
 embodying a global, decentralized,
 community-driven currency. Launched
@@ -19,10 +19,10 @@ numerous places directly or via third-
 parties."
 					imageSrc={img01}
 					link="/suggestion"
-					buttonText="Sign up"
+					buttonText="Buy SHIB"
 				/>
 				<Card
-					title="token 02"
+					title="BONE TOKEN"
 					description="BONE, our ecosystem's governance
 token, has a 250 million supply. It
 empowers Shib Army's voting in the
@@ -30,10 +30,10 @@ Doggy DAO and underpins Shibarium,
 our proprietary Layer 2 network."
 					imageSrc={img02}
 					link="/insurance"
-					buttonText="Sign up"
+					buttonText="Buy BONE"
 				/>
 				<Card
-					title="token 03"
+					title="LEASH TOKEN  "
 					description="LEASH, limited to 107,646 tokens,
 rewards our ecosystem's loyalists with
 exclusive benefits. Holders enjoy perks
@@ -42,7 +42,7 @@ minting access, and early entry to Shib:
 The Metaverse land sales."
 					imageSrc={img03}
 					link="/yield"
-					buttonText="Sign up"
+					buttonText="Buy LEASH"
 				/>
 			</div>
 		</>

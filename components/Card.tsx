@@ -15,7 +15,7 @@ interface CardProps {
 }
 
 export function Card({
-	// title,
+	title,
 	description,
 	imageSrc,
 	link,
@@ -36,12 +36,12 @@ export function Card({
 				</CardItem>
 
 				{/* Title */}
-				{/* <CardItem
+				<CardItem
 					translateZ="50"
 					className="text-lg font-bold text-neutral-600 dark:text-white"
 				>
 					{title}
-				</CardItem> */}
+				</CardItem>
 
 				{/* Description */}
 				<CardItem
@@ -64,8 +64,8 @@ export function Card({
 					>
 						Try now →
 					</CardItem>
-
 					{/* Button */}
+
 					<CardItem
 						translateZ={20}
 						as="button"

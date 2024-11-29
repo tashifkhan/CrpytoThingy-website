@@ -19,30 +19,25 @@ const Navbar: React.FC<NavbarProps> = ({
 				</a>
 
 				<div className="flex space-x-6">
-					<a
-						href="/"
-						className="text-gray-300 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
-					>
-						Home
-					</a>
-					<a
-						href="/about"
-						className="text-gray-300 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
-					>
-						About
-					</a>
-					<a
-						href="/services"
-						className="text-gray-300 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
-					>
-						Services
-					</a>
-					<a
-						href="/contact"
-						className="text-gray-300 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
-					>
-						Contact
-					</a>
+					{[
+						"Home",
+						"Shib.io",
+						"ShibaSwap",
+						"Shib Ecosystem",
+						"Shibarium",
+						"Ryoshi Archives",
+						"Advertise with us",
+						"Safety Guide",
+						"Shibpedia",
+					].map((item) => (
+						<a
+							key={item}
+							href={`/${item}`}
+							className="text-gray-300 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
+						>
+							{item}
+						</a>
+					))}
 				</div>
 			</div>
 		</nav>
