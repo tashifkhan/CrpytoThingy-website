@@ -5,7 +5,6 @@ import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 
 const ShibaswapSection = () => {
-
 	const [isClient, setIsClient] = useState(false);
 	const { ref, inView } = useInView({
 		triggerOnce: true,
@@ -49,17 +48,17 @@ const ShibaswapSection = () => {
 						{
 							title: "Bury",
 							description: "Stake and Earn Rewards",
-							icon: "/icons/bury-icon.png",
+							icon: "/bury-logo.svg",
 						},
 						{
 							title: "Swap",
 							description: "Between tokens",
-							icon: "/icons/swap-icon.png",
+							icon: "/swap-logo.svg",
 						},
 						{
 							title: "DIG",
 							description: "Stake Tokens",
-							icon: "/icons/dig-icon.png",
+							icon: "/dig-logo.svg",
 						},
 					].map((item, index) => (
 						<motion.div
