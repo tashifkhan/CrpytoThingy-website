@@ -30,7 +30,7 @@ export function Card({
 						src={imageSrc}
 						height="800"
 						width="800"
-						className="h-30 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+						className="h-30 w-full object-cover rounded-xl group-hover/card:shadow-xl opacity-80"
 						alt="thumbnail"
 					/>
 				</CardItem>
@@ -54,7 +54,7 @@ export function Card({
 					{/* Link */}
 					<CardItem
 						translateZ={20}
-						as={Link}  
+						as={Link}
 						href={link}
 						target=""
 						className="px-3 py-1 rounded-xl text-xs font-normal text-white"

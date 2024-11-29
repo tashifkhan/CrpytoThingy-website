@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import logoji from "@/public/shib-logo.svg";
+import logoji from "@/public/logo.png";
 
 interface NavbarProps {
 	logo?: string;
@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({
 		<nav className="fixed top-0 left-0 w-full bg-black/90 backdrop-blur-sm z-50">
 			<div className="container mx-auto flex items-center justify-between py-4 px-4">
 				<a href="/" className="flex items-center">
-					<img src={logo} alt={logoAlt} className="h-8 w-auto object-contain" />
+					<img src={logo} alt={logoAlt} className="h-9 w-auto object-contain" />
 				</a>
 				<div className="flex md:hidden">
 					<button

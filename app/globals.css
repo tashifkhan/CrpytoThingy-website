@@ -1,4 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+@import url("https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap");
+
+.yuji-mai-regular {
+	font-family: "Yuji Mai", serif;
+	font-weight: 400;
+	font-style: normal;
+}
