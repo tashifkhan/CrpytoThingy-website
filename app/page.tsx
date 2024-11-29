@@ -3,6 +3,8 @@ import { Card } from "@/components/Card";
 import img01 from "@/public/shib-token.png";
 import img02 from "@/public/leash-token.png";
 import img03 from "@/public/bone-token.png";
+import Banneer from "@/components/Banneer"
+import ShibaSwapPage from "@/components/ShibaSwap";
 
 export default function Home() {
 	return (
@@ -44,6 +46,16 @@ The Metaverse land sales."
 					link="/yield"
 					buttonText="Sign up"
 				/>
+
+<div className="w-[80%] mx-auto mt-12">
+				<Banneer />
+			</div>
+
+			<div className="w-[100%] mx-auto mt-12"> 
+                 <ShibaSwapPage/>
+
+			</div>
+
 			</div>
 		</>
 	);
