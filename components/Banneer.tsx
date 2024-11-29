@@ -1,43 +1,22 @@
 import React from "react";
 
 const MagazineBanner: React.FC = () => {
-
-
 	return (
-<<<<<<< HEAD
-		<div className="relative bg-slate-700 w-full h-[300px] flex items-center justify-between overflow-hidden rounded-3xl p-6"
-      style={{ backgroundImage: 'url(/doggy.avif)', backgroundSize: 'cover', backgroundPosition: 'center 27%' }}
-      >
-=======
-		<div className="relative bg-slate-700 w-full h-auto flex flex-col md:flex-row items-center justify-between overflow-hidden rounded-3xl p-6">
->>>>>>> c077a92 (animation completed)
-			{/* Magazine Covers Background */}
-			<div className="absolute inset-0 opacity-20 flex space-x-4 items-center justify-end pr-12">
-				<img
-					src="/api/placeholder/200/300"
-					alt="Magazine Cover 1"
-					className="transform rotate-[-10deg] h-32 md:h-48 shadow-lg rounded-2xl"
-				/>
-				<img
-					src="/api/placeholder/200/300"
-					alt="Magazine Cover 2"
-					className="transform rotate-[5deg] h-36 md:h-56 shadow-lg rounded-2xl"
-				/>
-				<img
-					src="/api/placeholder/200/300"
-					alt="Magazine Cover 3"
-					className="transform rotate-[-5deg] h-32 md:h-48 shadow-lg rounded-2xl"
-				/>
-			</div>
-
-
+		<div
+			className="relative bg-slate-950 w-full h-[200px] sm:h-[250px] md:h-[300px] flex items-center justify-between overflow-hidden rounded-3xl p-4 sm:p-6"
+			style={{
+				backgroundImage: "url(/doggy.avif)",
+				backgroundSize: "cover",
+				backgroundPosition: "center 27%",
+			}}
+		>
 			{/* Logo */}
-			<div className="absolute top-6 left-6 flex items-center space-x-2">
-				<div className="w-10 h-10 md:w-12 md:h-12 bg-orange-500 rounded-full flex items-center justify-center">
+			<div className="absolute top-4 sm:top-6 left-4 sm:left-6 flex items-center space-x-2">
+				<div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-500 rounded-full flex items-center justify-center">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 100 100"
-						className="w-6 h-6 md:w-8 md:h-8 text-white"
+						className="w-6 h-6 sm:w-8 sm:h-8 text-white"
 					>
 						<path
 							d="M50 10 L70 30 Q80 40, 70 50 Q60 60, 50 50 Q40 40, 30 50 L10 70 Z"
@@ -48,16 +27,16 @@ const MagazineBanner: React.FC = () => {
 			</div>
 
 			{/* Central Content */}
-			<div className="relative z-10 w-full text-center md:text-left md:pl-24">
-				<h1 className="text-2xl md:text-4xl font-bold text-orange-500 mb-4 md:mb-6 max-w-2xl">
+			<div className="relative z-10 w-full text-left pl-4 sm:pl-6 md:pl-24">
+				<h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-500 mb-4 sm:mb-6 max-w-2xl">
 					REACH THOUSANDS OF MONTHLY USERS WITH OUR MAGAZINE
 				</h1>
-				<button className="bg-orange-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-full flex items-center justify-center">
+				<button className="bg-orange-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full flex items-center">
 					Advertise Now
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						width="20"
-						height="20"
+						width="24"
+						height="24"
 						viewBox="0 0 24 24"
 						fill="none"
 						stroke="currentColor"
@@ -71,7 +50,7 @@ const MagazineBanner: React.FC = () => {
 			</div>
 
 			{/* Bottom Right Text */}
-			<div className="absolute bottom-3 right-3 text-white text-xs md:text-sm">
+			<div className="absolute bottom-4 sm:bottom-6 right-4 sm:right-6 text-white text-xs sm:text-sm">
 				The Shib
 			</div>
 		</div>

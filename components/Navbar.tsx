@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-import React from "react";
-import Image from "next/image";
-import logoji from "@/public/shib-token.png";
-=======
 "use client";
 import React, { useState } from "react";
-import logoji from "@/public/logo.jpg";
->>>>>>> c077a92 (animation completed)
+import logoji from "@/public/shib-logo.svg";
 
 interface NavbarProps {
 	logo?: string;
