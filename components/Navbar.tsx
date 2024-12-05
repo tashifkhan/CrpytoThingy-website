@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import logoji from "@/public/logo.png";
+import Link from "next/link";
 
 interface NavbarProps {
 	logo?: string;
@@ -16,9 +17,9 @@ const Navbar: React.FC<NavbarProps> = ({
 	return (
 		<nav className="fixed top-0 left-0 w-full bg-black/90 backdrop-blur-sm z-50">
 			<div className="container mx-auto flex items-center justify-between py-4 px-4">
-				<a href="/" className="flex items-center">
+				<Link href="/" className="flex items-center">
 					<img src={logo} alt={logoAlt} className="h-9 w-auto object-contain" />
-				</a>
+				</Link>
 				<div className="flex md:hidden">
 					<button
 						onClick={() => setIsOpen(!isOpen)}
@@ -59,46 +60,38 @@ const Navbar: React.FC<NavbarProps> = ({
 				</div>
 				<div className="hidden md:flex md:items-center md:space-x-6">
 					{[
-						"Home",
-						"Shib.io",
-						"ShibaSwap",
-						"Shib Ecosystem",
-						"Shibarium",
-						"Ryoshi Archives",
-						"Advertise with us",
-						"Safety Guide",
-						"Shibpedia",
+						{ name: "Home", link: "/" },
+						{ name: "Why Buy?", link: "/why" },
+						{ name: "How to Buy?", link: "/how" },
+						{ name: "Market Cap", link: "/table" },
+						{ name: "Docs", link: "/hehe" },
 					].map((item) => (
-						<a
-							key={item}
-							href={`/${item}`}
+						<Link
+							key={item.name}
+							href={item.link}
 							className="text-gray-300 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
 						>
-							{item}
-						</a>
+							{item.name}
+						</Link>
 					))}
 				</div>
 			</div>
 			{isOpen && (
 				<div className="md:hidden bg-black/90 backdrop-blur-sm px-4 pb-4">
 					{[
-						"Home",
-						"Shib.io",
-						"ShibaSwap",
-						"Shib Ecosystem",
-						"Shibarium",
-						"Ryoshi Archives",
-						"Advertise with us",
-						"Safety Guide",
-						"Shibpedia",
+						{ name: "Home", link: "/" },
+						{ name: "Why Buy?", link: "/why" },
+						{ name: "How to Buy?", link: "/how" },
+						{ name: "Market Cap", link: "/table" },
+						{ name: "Docs", link: "/hehe" },
 					].map((item) => (
-						<a
-							key={item}
-							href={`/${item}`}
+						<Link
+							key={item.name}
+							href={item.link}
 							className="block mt-4 text-gray-300 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
 						>
-							{item}
-						</a>
+							{item.name}
+						</Link>
 					))}
 				</div>
 			)}
