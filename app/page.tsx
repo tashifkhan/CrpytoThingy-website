@@ -1,10 +1,10 @@
 import { AnimatedTestimonialsDemo } from "@/components/Testies";
 import ShibariumComponent from "@/components/Block";
 import Hero from "@/components/Hero";
-import Table from "@/components/Data";
 import ShibaSwapPage from "@/components/ShibaSwap";
 import ShiboshisBanner from "@/components/Shiboshis";
 import Footer from "@/components/Footer";
+import MarketCap from "@/components/MarketCap";
 export default function Home() {
 	return (
 		<>
@@ -28,12 +28,9 @@ export default function Home() {
 			<div className="w-[100%] mx-auto mt-12">
 				<ShibaSwapPage />
 			</div>
-			<div className="max-w-3xl w-full mx-auto p-8">
-				<h1 className="text-4xl md:text-5xl font-bold mb-12 text-slate-200 text-center">
-					Market Data
-				</h1>
-				<Table />
-			</div>
+
+			<MarketCap />
+
 			<div className="w-[100%] mx-auto mt-12">
 				<ShiboshisBanner />
 			</div>

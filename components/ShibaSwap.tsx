@@ -29,7 +29,7 @@ const ShibaswapSection = () => {
 			{/* Left Section */}
 			<div className="flex flex-col gap-6 w-full md:w-3/5">
 				<motion.h2
-					className="text-3xl font-bold"
+					className="text-5xl font-bold yuji-mai-regular"
 					initial={{ opacity: 0, y: -50 }}
 					animate={inView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5 }}
@@ -37,7 +37,7 @@ const ShibaswapSection = () => {
 					Kalki
 				</motion.h2>
 				<motion.p
-					className="text-lg"
+					className="text-2xl yuji-mai-regular"
 					initial={{ opacity: 0, y: -50 }}
 					animate={inView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5, delay: 0.2 }}
@@ -57,13 +57,13 @@ const ShibaswapSection = () => {
 							title: "White Paper",
 							description: "Our Technical Document",
 							icon: "/swap-logo.svg",
-							link: "./whitw-paper.pdf",
+							link: "./white-paper.pdf",
 						},
 						{
 							title: "Why Buy",
 							description: "Reasons",
 							icon: "/dig-logo.svg",
-							link: "/docs",
+							link: "/hehe",
 						},
 					].map((item, index) => (
 						<motion.div
@@ -93,14 +93,26 @@ const ShibaswapSection = () => {
 						</motion.div>
 					))}
 				</div>
-				{/* <motion.button
-					className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg w-fit mx-auto md:mx-0 hover:scale-105 transition-transform duration-300"
-					initial={{ opacity: 0, y: 50 }}
-					animate={inView ? { opacity: 1, y: 0 } : {}}
-					transition={{ duration: 0.5, delay: 0.6 }}
-				>
-					Go to Shibaswap &rarr;
-				</motion.button> */}
+				<div className="flex gap-4 justify-center md:justify-start">
+					<motion.button
+						className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 transition-transform duration-300"
+						initial={{ opacity: 0, y: 50 }}
+						animate={inView ? { opacity: 1, y: 0 } : {}}
+						transition={{ duration: 0.5, delay: 0.6 }}
+						onClick={() => window.open("/why", "_self")}
+					>
+						Why Buy? &rarr;
+					</motion.button>
+					<motion.button
+						className="bg-orange-500/50 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 transition-transform duration-300"
+						initial={{ opacity: 0, y: 50 }}
+						animate={inView ? { opacity: 1, y: 0 } : {}}
+						transition={{ duration: 0.5, delay: 1.2 }}
+						onClick={() => window.open("/how", "_self")}
+					>
+						How to Buy? &rarr;
+					</motion.button>
+				</div>
 			</div>
 			{/* Right Section */}
 			<div className="flex flex-col items-center gap-4 w-full md:w-2/5 md:justify-end">
@@ -119,14 +131,6 @@ const ShibaswapSection = () => {
 				>
 					Audited by Certik
 				</motion.p>
-				{/* <motion.button
-					className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 transition-transform duration-300"
-					initial={{ opacity: 0, y: 50 }}
-					animate={inView ? { opacity: 1, y: 0 } : {}}
-					transition={{ duration: 0.5, delay: 1.2 }}
-				>
-					Audit Overview &rarr;
-				</motion.button> */}
 			</div>
 		</div>
 	);
