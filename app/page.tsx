@@ -32,13 +32,11 @@ export default function Home() {
 
 			<MarketCap />
 
-			<div className="w-[100%] mx-auto mt-12">
-				<ShiboshisBanner />
-			</div>
-			<ShibariumComponent />
-			<AnimatedTestimonialsDemo />
-			<Footer />
+			<div className="w-[100%] mx-auto mt-12">{/* <ShiboshisBanner /> */}</div>
+			{/* <ShibariumComponent /> */}
+			{/* <AnimatedTestimonialsDemo /> */}
 			<FloatingDockDemo />
+			<Footer />
 		</>
 	);
 }
