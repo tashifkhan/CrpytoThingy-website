@@ -1,93 +1,103 @@
 import Link from "next/link";
-import { FaTwitter, FaDiscord, FaMediumM } from "react-icons/fa"; // Add icons for social media
+import { FaTwitter, FaDiscord, FaTelegramPlane } from "react-icons/fa";
 
 const Footer: React.FC = () => {
 	return (
-		<footer className="bg-black text-white py-12 px-6 md:px-16">
+		<footer className="backdrop-blur-xl bg-white/10 rounded-2xl p-8 shadow-2xl shadow-white/10 border border-white/20 text-white py-12 px-6 md:px-16 border-t ">
 			<div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between gap-8">
 				{/* Left Section (Social Media) */}
 				<div className="flex flex-col items-start">
 					<div className="flex items-center gap-3 mb-4">
-						<img
-							src="/shib-token.png"
-							alt="Shiba Token Logo"
-							className="w-8 h-8"
-						/>
-						<h1 className="text-2xl font-bold">SHIBTOKEN</h1>
+						<img src="/logo.png" alt="Kalki Logo" className="w-8 h-8" />
+						<h1 className="text-2xl font-bold">KALKI</h1>
 					</div>
-					<p className="mb-4">Get connected with us on social networks:</p>
+					<p className="mb-4 text-slate-300">Join our community:</p>
 					<div className="flex gap-6">
 						<Link href="https://twitter.com" passHref>
-							<FaTwitter className="text-white text-2xl hover:text-blue-400" />
+							<FaTwitter className="text-slate-300 text-2xl hover:text-blue-400 transition-colors" />
 						</Link>
 						<Link href="https://discord.com" passHref>
-							<FaDiscord className="text-white text-2xl hover:text-blue-600" />
+							<FaDiscord className="text-slate-300 text-2xl hover:text-blue-600 transition-colors" />
 						</Link>
-						<Link href="https://medium.com" passHref>
-							<FaMediumM className="text-white text-2xl hover:text-orange-500" />
+						<Link href="https://telegram.org" passHref>
+							<FaTelegramPlane className="text-slate-300 text-2xl hover:text-sky-500 transition-colors" />
 						</Link>
 					</div>
 				</div>
 
-				{/* Center Section (Product Links) */}
+				{/* Center Section (Quick Links) */}
 				<div className="flex flex-col gap-4">
-					<h3 className="font-semibold text-lg">PRODUCTS</h3>
+					<h3 className="font-semibold text-lg text-slate-200">QUICK LINKS</h3>
 					<ul className="space-y-2">
 						<li>
-							<Link href="/shibarium" passHref>
-								Shibarium
+							<Link
+								href="/why"
+								className="text-slate-300 hover:text-white transition-colors"
+							>
+								Why Buy?
 							</Link>
 						</li>
 						<li>
-							<Link href="/shib-the-metaverse" passHref>
-								Shib The Metaverse
+							<Link
+								href="/how"
+								className="text-slate-300 hover:text-white transition-colors"
+							>
+								How to Buy
 							</Link>
 						</li>
 						<li>
-							<Link href="/shibaswap" passHref>
-								ShibaSwap
+							<Link
+								href="/table"
+								className="text-slate-300 hover:text-white transition-colors"
+							>
+								Market Cap
 							</Link>
 						</li>
 						<li>
-							<Link href="/shibacals" passHref>
-								Shibacals
-							</Link>
-						</li>
-						<li>
-							<Link href="/shiba-eternity" passHref>
-								Shiba Eternity
+							<Link
+								href="/docs"
+								className="text-slate-300 hover:text-white transition-colors"
+							>
+								Documentation
 							</Link>
 						</li>
 					</ul>
 				</div>
 
-				{/* Right Section (Useful Links) */}
+				{/* Right Section (Resources) */}
 				<div className="flex flex-col gap-4">
-					<h3 className="font-semibold text-lg">USEFUL LINKS</h3>
+					<h3 className="font-semibold text-lg text-slate-200">RESOURCES</h3>
 					<ul className="space-y-2">
 						<li>
-							<Link href="/contact-us" passHref>
+							<Link
+								href="/whitepaper"
+								className="text-slate-300 hover:text-white transition-colors"
+							>
+								Whitepaper
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="/roadmap"
+								className="text-slate-300 hover:text-white transition-colors"
+							>
+								Roadmap
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="/audit"
+								className="text-slate-300 hover:text-white transition-colors"
+							>
+								Audit Report
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="/contact"
+								className="text-slate-300 hover:text-white transition-colors"
+							>
 								Contact Us
-							</Link>
-						</li>
-						<li>
-							<Link href="/shib-io-blog" passHref>
-								Shib.io Blog
-							</Link>
-						</li>
-						<li>
-							<Link href="/foundational-doc" passHref>
-								Foundational Document
-							</Link>
-						</li>
-						<li>
-							<Link href="/certik-shibaswap-audit" passHref>
-								Certik ShibaSwap Audit
-							</Link>
-						</li>
-						<li>
-							<Link href="/shiba-eternity-fandom" passHref>
-								Shiba Eternity Fandom
 							</Link>
 						</li>
 					</ul>
@@ -95,8 +105,8 @@ const Footer: React.FC = () => {
 			</div>
 
 			{/* Bottom Copyright */}
-			<div className="mt-8 text-center text-sm text-gray-500">
-				<p>&copy; 2024 Shiba Inu</p>
+			<div className="mt-8 text-center text-sm text-slate-400">
+				<p>&copy; 2024 Kalki. All rights reserved.</p>
 			</div>
 		</footer>
 	);

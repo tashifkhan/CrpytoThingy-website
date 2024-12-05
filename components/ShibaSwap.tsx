@@ -26,9 +26,9 @@ const ShibaswapSection = () => {
 			className="text-white py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-12 w-4/5 mx-auto"
 		>
 			{/* Left Section */}
-			<div className="flex flex-col gap-6 w-full md:w-3/5">
+			<div className="flex flex-col gap-6 w-full md:w-3/5 backdrop-blur-xl bg-white/10 rounded-2xl p-8 shadow-2xl shadow-white/10 border border-white/20 hover:border-white/30 transition-all duration-300">
 				<motion.h2
-					className="text-5xl font-bold yuji-mai-regular"
+					className="text-5xl font-bold yuji-mai-regular text-slate-200"
 					initial={{ opacity: 0, y: -50 }}
 					animate={inView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5 }}
@@ -36,7 +36,7 @@ const ShibaswapSection = () => {
 					Kalki
 				</motion.h2>
 				<motion.p
-					className="text-2xl yuji-mai-regular"
+					className="text-2xl yuji-mai-regular text-slate-400"
 					initial={{ opacity: 0, y: -50 }}
 					animate={inView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5, delay: 0.2 }}
@@ -44,7 +44,6 @@ const ShibaswapSection = () => {
 					Decentralized currency
 				</motion.p>
 				<div className="flex flex-col gap-4">
-					{/* Reusable Row Component */}
 					{[
 						{
 							title: "Buy",
@@ -67,14 +66,14 @@ const ShibaswapSection = () => {
 					].map((item, index) => (
 						<motion.div
 							key={index}
-							className="flex items-center justify-between bg-gray-800 p-4 rounded-lg hover:scale-105 hover:shadow-lg w-4/5 mx-auto cursor-pointer transition-all duration-300 ease-in-out hover:w-full"
+							className="flex items-center justify-between backdrop-blur-sm bg-white/5 p-4 rounded-xl hover:scale-105 hover:shadow-lg w-4/5 mx-auto cursor-pointer transition-all duration-300 ease-in-out hover:w-full hover:bg-white/10"
 							initial={{ opacity: 0, scale: 0.8 }}
 							animate={inView ? { opacity: 1, scale: 1 } : {}}
 							transition={{ duration: 0.5, delay: 0.3 * index }}
 						>
 							<Link href={item.link || "#"}>
 								<div className="flex items-center gap-4">
-									<div className="bg-gray-700 p-2 rounded-full">
+									<div className="bg-white/10 p-2 rounded-full">
 										<Image
 											src={item.icon}
 											alt={item.title}
@@ -83,18 +82,18 @@ const ShibaswapSection = () => {
 										/>
 									</div>
 									<div>
-										<p className="font-semibold">{item.title}</p>
-										<p className="text-sm text-gray-400">{item.description}</p>
+										<p className="font-semibold text-slate-200">{item.title}</p>
+										<p className="text-sm text-slate-400">{item.description}</p>
 									</div>
 								</div>
 							</Link>
-							<span className="text-gray-400">&rarr;</span>
+							<span className="text-slate-400">&rarr;</span>
 						</motion.div>
 					))}
 				</div>
 				<div className="flex gap-4 justify-center md:justify-start">
 					<motion.button
-						className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 transition-transform duration-300"
+						className="backdrop-blur-sm bg-white/10 hover:bg-white/20 text-slate-200 font-bold py-2 px-4 rounded-xl hover:scale-105 transition-all duration-300 border border-white/20"
 						initial={{ opacity: 0, y: 50 }}
 						animate={inView ? { opacity: 1, y: 0 } : {}}
 						transition={{ duration: 0.5, delay: 0.6 }}
@@ -103,7 +102,7 @@ const ShibaswapSection = () => {
 						Why Buy? &rarr;
 					</motion.button>
 					<motion.button
-						className="bg-orange-500/50 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 transition-transform duration-300"
+						className="backdrop-blur-sm bg-white/5 hover:bg-white/15 text-slate-200 font-bold py-2 px-4 rounded-xl hover:scale-105 transition-all duration-300 border border-white/10"
 						initial={{ opacity: 0, y: 50 }}
 						animate={inView ? { opacity: 1, y: 0 } : {}}
 						transition={{ duration: 0.5, delay: 1.2 }}
@@ -113,17 +112,19 @@ const ShibaswapSection = () => {
 					</motion.button>
 				</div>
 			</div>
+
 			{/* Right Section */}
-			<div className="flex flex-col items-center gap-4 w-full md:w-2/5 md:justify-end">
+			<div className="flex flex-col items-center gap-4 w-full md:w-2/5 md:justify-end backdrop-blur-xl bg-white/10 rounded-2xl p-8 shadow-2xl shadow-white/10 border border-white/20">
 				<motion.div
 					initial={{ opacity: 0, scale: 0.8 }}
 					animate={inView ? { opacity: 1, scale: 1 } : {}}
 					transition={{ duration: 0.5, delay: 0.8 }}
+					className="hover:scale-105 transition-all duration-300"
 				>
 					<Image src="/Certik.png" alt="Certik Logo" width={399} height={399} />
 				</motion.div>
 				<motion.p
-					className="text-gray-400"
+					className="text-slate-400"
 					initial={{ opacity: 0, y: 50 }}
 					animate={inView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5, delay: 1 }}

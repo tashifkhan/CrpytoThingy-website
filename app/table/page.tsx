@@ -10,7 +10,7 @@ export default function TablePage() {
 		threshold: 0.1,
 	});
 	return (
-		<div className="min-h-screen bg-gradient-to-r from-slate-950 to-black p-4 flex items-center justify-center">
+		<div className="min-h-screen p-4 flex items-center justify-center">
 			<div ref={ref} className="max-w-3xl w-full mx-auto p-8">
 				<motion.h1
 					className="text-4xl md:text-5xl font-bold mb-12 text-slate-200 text-center yuji-mai-regular"
