@@ -39,7 +39,7 @@ const ShibariumComponent: React.FC = () => {
 				animate={inView ? { opacity: 1, y: 0 } : {}}
 				transition={{ duration: 0.5, delay: 0.2 }}
 			>
-				Shib&apos;s L2 Blockchain
+				{"Shib's L2 Blockchain"}
 			</motion.p>
 
 			<div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl">
