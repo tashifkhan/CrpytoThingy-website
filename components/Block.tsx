@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 const ShibariumComponent: React.FC = () => {
 	const [isClient, setIsClient] = useState(false);
@@ -38,7 +39,7 @@ const ShibariumComponent: React.FC = () => {
 				animate={inView ? { opacity: 1, y: 0 } : {}}
 				transition={{ duration: 0.5, delay: 0.2 }}
 			>
-				Shib's L2 Blockchain
+				Shib&apos;s L2 Blockchain
 			</motion.p>
 
 			<div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl">
@@ -49,14 +50,14 @@ const ShibariumComponent: React.FC = () => {
 					transition={{ duration: 0.5, delay: 0.4 }}
 				>
 					<div className="flex items-center mb-4">
-						<div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-4">
-							<img
-								src="/stake.svg"
-								alt="Stake Bone Icon"
-								className="h-6"
-							/>
-						</div>
-						<h2 className="text-xl font-semibold">Stake Bone</h2>
+						<Image
+							src="/stake.svg"
+							alt="Stake Bone Icon"
+							width={24}
+							height={24}
+							className="h-6"
+						/>
+						<h2 className="text-xl font-semibold ml-2">Stake Bone</h2>
 					</div>
 					<p className="text-sm mb-6">
 						Stake your BONE tokens to support network security and earn rewards.
@@ -75,18 +76,18 @@ const ShibariumComponent: React.FC = () => {
 					transition={{ duration: 0.5, delay: 0.6 }}
 				>
 					<div className="flex items-center mb-4">
-						<div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-4">
-							<img
-								src="/bridge.svg"
-								alt="Bridge Tokens Icon"
-								className="h-6"
-							/>
-						</div>
-						<h2 className="text-xl font-semibold">Bridge Tokens</h2>
+						<Image
+							src="/bridge.svg"
+							alt="Bridge Tokens Icon"
+							width={24}
+							height={24}
+							className="h-6"
+						></Image>
+						<h2 className="text-xl font-semibold ml-2">Bridge Tokens</h2>
 					</div>
 					<p className="text-sm mb-6">
-						Secure and seamless transfer of tokens between Ethereum and
-						Shibarium blockchains.
+						Bridge your tokens seamlessly between Ethereum and Shibarium
+						blockchains.
 					</p>
 					<button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg mt-auto focus:outline-none focus:ring focus:ring-orange-300">
 						Shibarium Bridge →
