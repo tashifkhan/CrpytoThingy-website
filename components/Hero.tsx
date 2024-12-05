@@ -6,7 +6,7 @@ export default function Hero() {
 	return (
 		<div className="relative flex flex-col items-center mt-[4rem]">
 			<div
-				className="absolute inset-0"
+				className="absolute inset-0 hidden md:block"
 				style={{
 					backgroundImage: "url('/hero-back.png')",
 					backgroundSize: "cover",
