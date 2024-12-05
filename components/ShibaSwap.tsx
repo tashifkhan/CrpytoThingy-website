@@ -3,6 +3,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { link } from "fs";
 
 const ShibaswapSection = () => {
 	const [isClient, setIsClient] = useState(false);
@@ -32,7 +34,7 @@ const ShibaswapSection = () => {
 					animate={inView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5 }}
 				>
-					Shibaswap
+					Kalki
 				</motion.h2>
 				<motion.p
 					className="text-lg"
@@ -40,25 +42,28 @@ const ShibaswapSection = () => {
 					animate={inView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5, delay: 0.2 }}
 				>
-					Decentralized Exchange
+					Decentralized currency
 				</motion.p>
 				<div className="flex flex-col gap-4">
 					{/* Reusable Row Component */}
 					{[
 						{
-							title: "Bury",
-							description: "Stake and Earn Rewards",
+							title: "Buy",
+							description: "Ride the Wave",
 							icon: "/bury-logo.svg",
+							link: "/",
 						},
 						{
-							title: "Swap",
-							description: "Between tokens",
+							title: "White Paper",
+							description: "Our Technical Document",
 							icon: "/swap-logo.svg",
+							link: "./whitw-paper.pdf",
 						},
 						{
-							title: "DIG",
-							description: "Stake Tokens",
+							title: "Why Buy",
+							description: "Reasons",
 							icon: "/dig-logo.svg",
+							link: "/docs",
 						},
 					].map((item, index) => (
 						<motion.div
@@ -68,32 +73,34 @@ const ShibaswapSection = () => {
 							animate={inView ? { opacity: 1, scale: 1 } : {}}
 							transition={{ duration: 0.5, delay: 0.3 * index }}
 						>
-							<div className="flex items-center gap-4">
-								<div className="bg-gray-700 p-2 rounded-full">
-									<Image
-										src={item.icon}
-										alt={item.title}
-										width={48}
-										height={48}
-									/>
+							<Link href={item.link || "#"}>
+								<div className="flex items-center gap-4">
+									<div className="bg-gray-700 p-2 rounded-full">
+										<Image
+											src={item.icon}
+											alt={item.title}
+											width={48}
+											height={48}
+										/>
+									</div>
+									<div>
+										<p className="font-semibold">{item.title}</p>
+										<p className="text-sm text-gray-400">{item.description}</p>
+									</div>
 								</div>
-								<div>
-									<p className="font-semibold">{item.title}</p>
-									<p className="text-sm text-gray-400">{item.description}</p>
-								</div>
-							</div>
+							</Link>
 							<span className="text-gray-400">&rarr;</span>
 						</motion.div>
 					))}
 				</div>
-				<motion.button
+				{/* <motion.button
 					className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg w-fit mx-auto md:mx-0 hover:scale-105 transition-transform duration-300"
 					initial={{ opacity: 0, y: 50 }}
 					animate={inView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5, delay: 0.6 }}
 				>
 					Go to Shibaswap &rarr;
-				</motion.button>
+				</motion.button> */}
 			</div>
 			{/* Right Section */}
 			<div className="flex flex-col items-center gap-4 w-full md:w-2/5 md:justify-end">
@@ -112,14 +119,14 @@ const ShibaswapSection = () => {
 				>
 					Audited by Certik
 				</motion.p>
-				<motion.button
+				{/* <motion.button
 					className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 transition-transform duration-300"
 					initial={{ opacity: 0, y: 50 }}
 					animate={inView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5, delay: 1.2 }}
 				>
 					Audit Overview &rarr;
-				</motion.button>
+				</motion.button> */}
 			</div>
 		</div>
 	);
