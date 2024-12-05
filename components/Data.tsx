@@ -22,7 +22,7 @@ export default function Table() {
 			await navigator.clipboard.writeText(text);
 			setCopySuccess("Copied!");
 			setTimeout(() => setCopySuccess(""), 2000);
-		} catch (_) {
+		} catch {
 			setCopySuccess("Failed to copy!");
 		}
 	};

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { link } from "fs";
 
 const ShibaswapSection = () => {
 	const [isClient, setIsClient] = useState(false);
