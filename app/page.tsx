@@ -1,8 +1,6 @@
-import { AnimatedTestimonialsDemo } from "@/components/Testies";
-import ShibariumComponent from "@/components/Block";
 import Hero from "@/components/Hero";
 import ShibaSwapPage from "@/components/ShibaSwap";
-import ShiboshisBanner from "@/components/Shiboshis";
+
 import Footer from "@/components/Footer";
 import MarketCap from "@/components/MarketCap";
 import { FloatingDockDemo } from "@/components/Socials";
