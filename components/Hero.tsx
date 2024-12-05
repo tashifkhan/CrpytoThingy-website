@@ -14,6 +14,15 @@ export default function Hero() {
 					opacity: 0.2,
 				}}
 			></div>
+			<div
+				className="absolute inset-0 md:hidden "
+				style={{
+					backgroundImage: "url('/bg02.png')",
+					backgroundSize: "cover",
+					backgroundPosition: "center",
+					opacity: 0.6,
+				}}
+			></div>
 			<div className="relative z-10 flex flex-col items-center">
 				<h1 className="text-7xl font-bold mt-[12rem] yuji-mai-regular text-slate-400">
 					{/* <Image

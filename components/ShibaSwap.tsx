@@ -60,7 +60,7 @@ const ShibaswapSection = () => {
 							link: "./white-paper.pdf",
 						},
 						{
-							title: "Why Buy",
+							title: "Docs",
 							description: "Reasons",
 							icon: "/dig-logo.svg",
 							link: "/hehe",
