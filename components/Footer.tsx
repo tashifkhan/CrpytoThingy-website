@@ -13,13 +13,13 @@ const Footer: React.FC = () => {
 					</div>
 					<p className="mb-4 text-slate-300">Join our community:</p>
 					<div className="flex gap-6">
-						<Link href="https://twitter.com" passHref>
+						<Link href=" https://x.com/KALKI_KAALYUG" passHref>
 							<FaTwitter className="text-slate-300 text-2xl hover:text-blue-400 transition-colors" />
 						</Link>
 						<Link href="https://discord.com" passHref>
 							<FaDiscord className="text-slate-300 text-2xl hover:text-blue-600 transition-colors" />
 						</Link>
-						<Link href="https://telegram.org" passHref>
+						<Link href="https://t.me/kalkikaalyug" passHref>
 							<FaTelegramPlane className="text-slate-300 text-2xl hover:text-sky-500 transition-colors" />
 						</Link>
 					</div>
