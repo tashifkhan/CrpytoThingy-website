@@ -14,7 +14,7 @@ export default function Table() {
 		// marketCap: "$600B",
 		// value: "$30,000",
 		growth: "+5.2%", // Added growth field
-		address: "0x1234567890abcdef1234567890abcdef12345678",
+		address: "8rKrd91nu6uRJa8hntaft5YDwmwkMhSGkTuRitRNdJKE",
 	};
 
 	const copyToClipboard = async (text: string) => {
