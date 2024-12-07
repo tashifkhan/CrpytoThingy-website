@@ -20,6 +20,9 @@ export const metadata: Metadata = {
 	title: "KalkiToken",
 	description: `"Kalki: The Crypto of New Beginnings"
 Inspired by the rich tapestry of Indian mythology, Kalki symbolizes the ultimate force of renewal and transformation. Just as Kalki ushers in a new era by ending Kalyug, this cryptocurrency is here to disrupt the old, chaotic financial systems and bring balance, transparency, and empowerment to the digital age.`,
+	icons: {
+		icon: "./logo.png",
+	},
 };
 
 export default function RootLayout({
@@ -29,6 +32,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<link rel="icon" href="/path/to/logo.png" />
+			</head>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-950`}
 			>
