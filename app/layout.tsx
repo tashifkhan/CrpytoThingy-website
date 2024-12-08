@@ -32,9 +32,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<head>
-				<link rel="icon" href="/logo.png" />
-			</head>
+			{/* <head>
+				<link rel="icon" href={logi} />
+			</head> */}
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-950`}
 			>

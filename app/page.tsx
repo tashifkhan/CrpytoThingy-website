@@ -1,6 +1,5 @@
 import Hero from "@/components/Hero";
 import ShibaSwapPage from "@/components/ShibaSwap";
-
 import Footer from "@/components/Footer";
 import MarketCap from "@/components/MarketCap";
 import { FloatingDockDemo } from "@/components/Socials";
