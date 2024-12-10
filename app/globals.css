@@ -32,7 +32,7 @@ body::before {
 
 @media (max-width: 768px) {
 	body::before {
-		background-image: url("/bg.png");
+		background-image: url("/bg.jpg");
 		opacity: 0.2;
 	}
 }
