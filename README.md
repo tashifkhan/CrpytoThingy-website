@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Crypto Website Project
 
-## Getting Started
+Welcome to the Crypto Website project! This project is a full-fledged cryptocurrency website developed for a freelance client. The website is hosted at
 
-First, run the development server:
+<p align="center">
+    <a href="http://kalkiyug.in">kalkiyug.in</a>
+</p>
+
+---
+
+# Kalki - Cryptocurrency
+
+<p align="center">
+    <img src="app/icon.png" alt="Kalki" width="200">
+</p>
+
+A modern and dynamic cryptocurrency website developed with Next.js, featuring a mythological-inspired design and comprehensive crypto trading information. Live at [kalkiyug.in](http://kalkiyug.in).
+
+## Features
+
+- **Hero Section**: Eye-catching animated hero section with gradient text effects
+- **ShibaSwap Integration**: Direct integration with ShibaSwap for token trading
+- **Market Cap Dashboard**: Real-time cryptocurrency market capitalization data
+- **Social Dock**: Floating social media links for easy access
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Modern UI**: Sleek dark theme with gradient accents and smooth animations
+
+## Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [TailwindCSS](https://tailwindcss.com/)
+- **Fonts**: Custom Google Fonts (Amita, Yuji Mai)
+- **Icons**: Lucide React Icons
+- **Analytics**: Vercel Analytics
+
+## Local Development
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/kalki-crypto
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open http://localhost:3000 in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/                  # Next.js app directory
+├── components/          # React components
+├── public/             # Static assets
+└── styles/            # Global styles
+```
 
-## Learn More
+### Contributing
 
-To learn more about Next.js, take a look at the following resources:
+This is a client project, but if you find any bugs please create an issue.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+For any inquiries, please reach out to us through the contact form on the website.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
