@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Amita, Yuji_Mai } from "next/font/google";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -14,6 +15,18 @@ const geistMono = localFont({
 	src: "./fonts/GeistMonoVF.woff",
 	variable: "--font-geist-mono",
 	weight: "100 900",
+});
+
+const yujimai = Yuji_Mai({
+	subsets: ["cyrillic", "latin"],
+	weight: "400",
+	variable: "--font-yuji-mai",
+});
+
+const amita = Amita({
+	subsets: ["devanagari", "latin"],
+	weight: "400",
+	variable: "--font-amita",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +46,7 @@ export default function RootLayout({
 				<link rel="icon" href={logi} />
 			</head> */}
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-950`}
+				className={`${geistSans.variable} ${geistMono.variable} ${amita.variable} ${yujimai.variable} antialiased bg-slate-950`}
 			>
 				<Navbar />
 				{children}

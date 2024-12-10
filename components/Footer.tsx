@@ -104,8 +104,6 @@ const Footer: React.FC = () => {
 				</div>
 			</div>
 
-			{/* alihgnment & and links fixed */}
-
 			{/* Bottom Copyright */}
 			<div className="mt-8 text-center text-sm text-slate-400">
 				<p>&copy; 2024 Kalki. All rights reserved.</p>

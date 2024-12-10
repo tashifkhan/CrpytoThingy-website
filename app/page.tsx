@@ -10,7 +10,7 @@ export default function Home() {
 			<div className="w-[80%] mx-auto mt-12">
 				<div className="max-w-3xl mx-auto bg-gradient-to-r from-slate-950 to-black p-8 rounded-xl shadow-2xl">
 					<div className="space-y-6 text-center">
-						<h2 className="text-4xl font-bold text-transparent bg-gradient-to-r from-slate-300 to-slate-400 bg-clip-text yuji-mai-regular">
+						<h2 className="text-5xl font-extrabold text-transparent bg-gradient-to-r from-orange-400 via-yellow-500 to-red-500 bg-clip-text yuji-mai-regular drop-shadow-lg">
 							Kalki: The Crypto of New Beginnings
 						</h2>
 						<p className="text-lg text-slate-300 leading-relaxed">
