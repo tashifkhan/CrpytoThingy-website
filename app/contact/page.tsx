@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { Mail, Globe } from "lucide-react";
+import { Mail } from "lucide-react";
 import { FaTwitter, FaTelegramPlane } from "react-icons/fa";
 
 const ContactSection = () => {

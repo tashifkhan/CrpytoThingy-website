@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaTwitter, FaDiscord, FaTelegramPlane } from "react-icons/fa";
+import { FaTwitter, FaTelegramPlane } from "react-icons/fa";
 
 const Footer: React.FC = () => {
 	return (

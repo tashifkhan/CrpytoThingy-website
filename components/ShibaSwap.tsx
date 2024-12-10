@@ -49,7 +49,7 @@ const ShibaswapSection = () => {
 							title: "Buy",
 							description: "Ride the Wave",
 							icon: "/bury-logo.svg",
-							link: "/",
+							link: "https://dexscreener.com/solana/d9mmirysjroyyg3pfakcj5tpeslqxwfeyxvxfx7kd4fh",
 						},
 						{
 							title: "White Paper",
