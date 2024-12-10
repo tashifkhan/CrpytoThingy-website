@@ -13,7 +13,7 @@ export default function Table() {
 		network: "Solana",
 		// marketCap: "$600B",
 		// value: "$30,000",
-		growth: "+5.2%", // Added growth field
+		// growth: "+5.2%", // Added growth field
 		address: "8rKrd91nu6uRJa8hntaft5YDwmwkMhSGkTuRitRNdJKE",
 	};
 
@@ -34,9 +34,9 @@ export default function Table() {
 					{transaction.name}
 				</h2>
 				<div className="flex items-center gap-4">
-					<span className="text-xl font-medium text-emerald-400">
+					{/* <span className="text-xl font-medium text-emerald-400">
 						{transaction.growth}
-					</span>
+					</span> */}
 					{/* <span className="text-3xl font-bold text-emerald-400">
 						{transaction.value}
 					</span> */}
