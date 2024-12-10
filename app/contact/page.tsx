@@ -32,8 +32,8 @@ const ContactSection = () => {
 						Connect With Us
 					</h2>
 					<p className="text-slate-300 max-w-2xl mx-auto">
-						Have questions about Kalki? Whether you're interested in investing
-						or need technical support, our team is here to help.
+						Have questions about Kalki? Whether you&apos;re interested in
+						investing or need technical support, our team is here to help.
 					</p>
 				</div>
 
