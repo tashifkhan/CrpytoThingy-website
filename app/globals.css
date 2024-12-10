@@ -27,12 +27,12 @@ body::before {
 	background-image: url("/bg.jpg");
 	background-size: cover;
 	background-position: center;
-	opacity: 0.3;
+	opacity: 0.2;
 }
 
 @media (max-width: 768px) {
 	body::before {
 		background-image: url("/bg.png");
-		opacity: 0.3;
+		opacity: 0.2;
 	}
 }

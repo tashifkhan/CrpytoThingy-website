@@ -36,7 +36,10 @@ export function Card({
 				</CardItem>
 
 				{/* Title */}
-				<CardItem translateZ="50" className="text-lg font-bold text-white">
+				<CardItem
+					translateZ="50"
+					className="text-lg font-bold text-white amita pt-3 pb-1"
+				>
 					{title}
 				</CardItem>
 

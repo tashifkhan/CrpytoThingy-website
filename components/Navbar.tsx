@@ -65,6 +65,7 @@ const Navbar: React.FC<NavbarProps> = ({
 						{ name: "How to Buy?", link: "/how" },
 						{ name: "Market Cap", link: "/table" },
 						{ name: "Docs", link: "/hehe" },
+						{ name: "Contact Us", link: "/contact" },
 					].map((item) => (
 						<Link
 							key={item.name}
@@ -84,6 +85,7 @@ const Navbar: React.FC<NavbarProps> = ({
 						{ name: "How to Buy?", link: "/how" },
 						{ name: "Market Cap", link: "/table" },
 						{ name: "Docs", link: "/hehe" },
+						{ name: "Contact Us", link: "/contact" },
 					].map((item) => (
 						<Link
 							key={item.name}
