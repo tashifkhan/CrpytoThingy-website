@@ -30,7 +30,7 @@ export function Card({
 						src={imageSrc}
 						height="800"
 						width="800"
-						className="h-30 w-full object-cover rounded-[2rem] group-hover/card:shadow-xl opacity-80"
+						className="h-30 w-full object-cover rounded-[0.75rem] group-hover/card:shadow-xl opacity-80"
 						alt="thumbnail"
 					/>
 				</CardItem>

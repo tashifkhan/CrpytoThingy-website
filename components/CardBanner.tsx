@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "@/components/Card";
-import img03 from "@/public/relic02.png";
+import img03 from "@/public/relic02.jpg";
 import img02 from "@/public/gg2.png";
 // import img03 from "@/public/bone-token.png";
 import img01 from "@/public/token01.jpg";
