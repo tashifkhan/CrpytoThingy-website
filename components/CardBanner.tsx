@@ -1,9 +1,9 @@
 import React from "react";
 import { Card } from "@/components/Card";
-import img03 from "@/public/logo.png";
+import img03 from "@/public/relic02.png";
 import img02 from "@/public/gg2.png";
 // import img03 from "@/public/bone-token.png";
-import img01 from "@/public/gg1.jpeg";
+import img01 from "@/public/token01.jpg";
 
 export default function CardBanner() {
 	return (
@@ -13,14 +13,14 @@ export default function CardBanner() {
 					title: "Ending chaos, building trust.",
 					description: `Kalki aims to dismantle the confusion and mistrust associated with traditional financial systems. By leveraging blockchain technology, it creates a secure, transparent, and trustworthy environment for financial transactions.`,
 					imageSrc: img01,
-					link: "/",
+					link: "https://dexscreener.com/solana/d9mmirysjroyyg3pfakcj5tpeslqxwfeyxvxfx7kd4fh",
 					buttonText: "",
 				},
 				{
 					title: "The dawn of a new financial age.",
 					description: `This highlights Kalki as the harbinger of a transformative era in finance, introducing innovation and fairness to the digital economy, much like the mythical Kalki ushers in a new epoch.`,
 					imageSrc: img03,
-					link: "/",
+					link: "https://dexscreener.com/solana/d9mmirysjroyyg3pfakcj5tpeslqxwfeyxvxfx7kd4fh",
 					buttonText: "",
 				},
 				{
@@ -28,7 +28,7 @@ export default function CardBanner() {
 					description: `Kalki represents a fresh start, empowering individuals to take control of their financial future. It aligns with the concept of entering a brighter, more equitable epoch (yug) with the power of decentralized currency.
 `,
 					imageSrc: img02,
-					link: "/",
+					link: "https://dexscreener.com/solana/d9mmirysjroyyg3pfakcj5tpeslqxwfeyxvxfx7kd4fh",
 					buttonText: "",
 				},
 			].map((card, index) => (
