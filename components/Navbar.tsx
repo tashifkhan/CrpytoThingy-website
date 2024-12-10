@@ -77,7 +77,7 @@ const Navbar: React.FC<NavbarProps> = ({
 				</div>
 			</div>
 			{isOpen && (
-				<div className="md:hidden bg-black/90 backdrop-blur-sm px-4 pb-4">
+				<div className="md:hidden bg-black/90 backdrop-blur-sm px-4 pb-4 flex flex-col items-center">
 					{[
 						{ name: "Home", link: "/" },
 						{ name: "Why Buy?", link: "/why" },
@@ -88,7 +88,7 @@ const Navbar: React.FC<NavbarProps> = ({
 						<Link
 							key={item.name}
 							href={item.link}
-							className="block mt-4 text-gray-300 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
+							className="block mt-4 text-gray-300 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider text-center"
 						>
 							{item.name}
 						</Link>
