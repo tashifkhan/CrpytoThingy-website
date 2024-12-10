@@ -1,7 +1,11 @@
 "use client";
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
-import { IconBrandX, IconBrandTelegram } from "@tabler/icons-react";
+import {
+	IconBrandX,
+	IconBrandTelegram,
+	IconShoppingCart,
+} from "@tabler/icons-react";
 
 export function FloatingDockDemo() {
 	const links = [
@@ -13,7 +17,12 @@ export function FloatingDockDemo() {
 		{
 			title: "Telegram",
 			icon: <IconBrandTelegram className="h-full w-full text-neutral-300" />,
-			href: "https://t.me/kalkikaalyug",
+			href: "https://t.me/kalkiyugcoin",
+		},
+		{
+			title: "Dexture",
+			icon: <IconShoppingCart className="h-full w-full text-neutral-300" />,
+			href: "https://dexscreener.com/solana/d9mmirysjroyyg3pfakcj5tpeslqxwfeyxvxfx7kd4fh",
 		},
 	];
 	return (

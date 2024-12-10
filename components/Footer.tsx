@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
 						{/* <Link href="https://discord.com" passHref>
 							<FaDiscord className="text-slate-300 text-2xl hover:text-blue-600 transition-colors" />
 						</Link> */}
-						<Link href="https://t.me/kalkikaalyug" passHref>
+						<Link href="https://t.me/kalkiyugcoin" passHref>
 							<FaTelegramPlane className="text-slate-300 text-2xl hover:text-sky-500 transition-colors" />
 						</Link>
 					</div>
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
 					<ul className="space-y-2">
 						<li>
 							<Link
-								href="/white-paper.png"
+								href="/white-paper.pdf"
 								className="text-slate-300 hover:text-white transition-colors"
 							>
 								Whitepaper
