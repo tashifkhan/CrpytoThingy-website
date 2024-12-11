@@ -27,8 +27,9 @@ A modern and dynamic cryptocurrency website developed with Next.js, featuring a 
 
 ## Tech Stack
 
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Styling**: [TailwindCSS](https://tailwindcss.com/)
+- **Language**: TypeScript
+- **Framework**: Next.js
+- **Styling**: TailwindCSS
 - **Fonts**: Custom Google Fonts (Amita, Yuji Mai)
 - **Icons**: Lucide React Icons
 - **Analytics**: Vercel Analytics
@@ -59,9 +60,9 @@ npm run dev
 
 ```
 ├── app/                  # Next.js app directory
-├── components/          # React components
-├── public/             # Static assets
-└── styles/            # Global styles
+|  └──  components/       # React reusable components
+└──  public/              # Static assets
+
 ```
 
 ### Contributing
