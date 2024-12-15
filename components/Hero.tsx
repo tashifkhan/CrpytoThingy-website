@@ -6,7 +6,7 @@ export default function Hero() {
 	return (
 		<div className="relative flex flex-col items-center mt-[4rem]">
 			<div className="relative z-10 flex flex-col items-center">
-				<h1 className="text-7xl mt-[10rem] amita font-extrabold text-transparent bg-gradient-to-r from-orange-400 via-yellow-500 to-red-500 bg-clip-text drop-shadow-lg">
+				<h1 className="text-7xl mt-[10rem] amita font-extrabold text-transparent bg-gradient-to-r from-orange-300 to-slate-300 bg-clip-text drop-shadow-lg">
 					{/* <Image
 						src="/logo.png"
 						width={100}

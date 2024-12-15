@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap");
-
-.yuji-mai-regular {
-	font-family: var(--font-yuji-mai);
-}
-
 .amita {
 	font-family: var(--font-amita);
 }
@@ -24,15 +18,15 @@ body::before {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	background-image: url("/bg.jpg");
+	background-image: url("/hero-back.png");
 	background-size: cover;
 	background-position: center;
-	opacity: 0.2;
+	opacity: 0.1;
 }
 
 @media (max-width: 768px) {
 	body::before {
-		background-image: url("/bg.jpg");
-		opacity: 0.2;
+		background-image: url("/bg02.png");
+		opacity: 0.6;
 	}
 }

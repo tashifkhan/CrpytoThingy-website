@@ -28,7 +28,7 @@ const ShibaswapSection = () => {
 			{/* Left Section */}
 			<div className="flex flex-col gap-6 w-full md:w-3/5 backdrop-blur-xl bg-white/10 rounded-2xl p-8 shadow-2xl shadow-white/10 border border-white/20 hover:border-white/30 transition-all duration-300">
 				<motion.h2
-					className="text-5xl font-bold yuji-mai-regular text-slate-200"
+					className="text-5xl font-bold amita text-slate-200"
 					initial={{ opacity: 0, y: -50 }}
 					animate={inView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5 }}
@@ -36,7 +36,7 @@ const ShibaswapSection = () => {
 					Kalki
 				</motion.h2>
 				<motion.p
-					className="text-2xl yuji-mai-regular text-slate-400"
+					className="text-2xl amita text-slate-400"
 					initial={{ opacity: 0, y: -50 }}
 					animate={inView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5, delay: 0.2 }}

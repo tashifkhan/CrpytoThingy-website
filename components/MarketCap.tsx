@@ -13,7 +13,7 @@ export default function MarketCap() {
 	return (
 		<div ref={ref} className="max-w-3xl w-full mx-auto p-8">
 			<motion.h1
-				className="text-4xl md:text-5xl font-bold mb-12 text-slate-200 text-center yuji-mai-regular"
+				className="text-4xl md:text-5xl font-bold mb-12 text-slate-200 text-center amita"
 				initial={{ opacity: 0, y: -50 }}
 				animate={inView ? { opacity: 1, y: 0 } : {}}
 				transition={{ duration: 0.5 }}

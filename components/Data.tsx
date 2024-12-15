@@ -6,7 +6,7 @@ export default function Table() {
 
 	const transaction = {
 		id: 1,
-		name: "KALKI",
+		name: "Kalki",
 		supply: "1Billion",
 		taxes: "0%",
 		// liquidity: "$500M",
@@ -29,10 +29,8 @@ export default function Table() {
 
 	return (
 		<div className="backdrop-blur-xl bg-white/10 rounded-2xl p-8 shadow-2xl shadow-white/10 border border-white/20 hover:border-white/30 transition-all duration-300 hover:shadow-white/5">
-			<div className="flex justify-between items-center mb-8">
-				<h2 className="text-4xl font-bold text-slate-200">
-					{transaction.name}
-				</h2>
+			<div className="flex justify-between amita items-center mb-8">
+				<h2 className="text-4xl text-slate-200">{transaction.name}</h2>
 				<div className="flex items-center gap-4">
 					{/* <span className="text-xl font-medium text-emerald-400">
 						{transaction.growth}
@@ -87,7 +85,7 @@ export default function Table() {
 					</span>
 					<button
 						onClick={() => copyToClipboard(transaction.address)}
-						className="px-6 py-2 text-base bg-white/10 rounded-full hover:bg-white/20 transition-colors duration-200 text-slate-200"
+						className="px-6 py-2 text-base bg-white/10 rounded-full hover:bg-white/20 text-slate-200 transition-all duration-300 transform hover:scale-105"
 					>
 						{copySuccess || "Copy"}
 					</button>

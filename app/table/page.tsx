@@ -13,12 +13,14 @@ export default function TablePage() {
 		<div className="min-h-screen p-4 flex items-center justify-center">
 			<div ref={ref} className="max-w-3xl w-full mx-auto p-8">
 				<motion.h1
-					className="text-4xl md:text-5xl font-bold mb-12 text-slate-200 text-center yuji-mai-regular"
+					className="text-5xl md:text-5xl font-bold mb-12 text-slate-200 text-center amita"
 					initial={{ opacity: 0, y: -50 }}
 					animate={inView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5 }}
 				>
-					Market Data
+					<span className="text-transparent bg-gradient-to-r from-orange-300 to-slate-300 bg-clip-text">
+						Market Data
+					</span>
 				</motion.h1>
 
 				<motion.div

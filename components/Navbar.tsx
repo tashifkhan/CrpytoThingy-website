@@ -70,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = ({
 						<Link
 							key={item.name}
 							href={item.link}
-							className="text-gray-300 hover:text-white transition-colors text-sm font-medium amita tracking-wider"
+							className="text-gray-300 hover:text-white transition-colors text-sm font-medium tracking-wider"
 						>
 							{item.name}
 						</Link>
@@ -90,7 +90,7 @@ const Navbar: React.FC<NavbarProps> = ({
 						<Link
 							key={item.name}
 							href={item.link}
-							className="block mt-4 text-gray-300 hover:text-white transition-colors text-sm amita font-mediumtracking-wider text-center"
+							className="block mt-4 text-gray-300 hover:text-white transition-colors text-sm font-mediumtracking-wider text-center"
 						>
 							{item.name}
 						</Link>

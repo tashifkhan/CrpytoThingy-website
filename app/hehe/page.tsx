@@ -12,7 +12,7 @@ export default function BuyPage() {
 		<div className="min-h-screen pt-24 pb-12 px-4">
 			{/* Hero Section */}
 			<div className="max-w-6xl mx-auto">
-				<h1 className="text-5xl font-bold text-center text-transparent bg-gradient-to-r from-slate-300 to-slate-400 bg-clip-text yuji-mai-regular mb-12">
+				<h1 className="text-5xl font-bold text-center text-transparent bg-gradient-to-r from-orange-300 to-slate-300  bg-clip-text amita mb-12">
 					How to Buy Kalki
 				</h1>
 
@@ -60,7 +60,7 @@ export default function BuyPage() {
 
 				{/* Why Buy Section */}
 				<div className="max-w-4xl mx-auto mt-20">
-					<h2 className="text-4xl font-bold text-center text-transparent bg-gradient-to-r from-slate-300 to-slate-400 bg-clip-text yuji-mai-regular mb-12">
+					<h2 className="text-5xl font-bold text-center text-transparent bg-gradient-to-r from-orange-300 to-slate-300  bg-clip-text amita pb-12">
 						Why Buy Kalki?
 					</h2>
 

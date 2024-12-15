@@ -8,9 +8,9 @@ export default function Home() {
 		<>
 			<Hero />
 			<div className="w-[80%] mx-auto mt-12">
-				<div className="max-w-3xl mx-auto bg-gradient-to-r from-slate-950 to-black p-8 rounded-xl shadow-2xl">
+				<div className="max-w-3xl mx-auto bg-gradient-to-r from-slate-950 to-black p-8 rounded-[2rem] shadow-2xl hover:shadow-[#E5C7A9]/15 transition-all duration-300 transform hover:scale-105">
 					<div className="space-y-6 text-center">
-						<h2 className="text-5xl font-extrabold text-transparent bg-gradient-to-r from-orange-400 via-yellow-500 to-red-500 bg-clip-text yuji-mai-regular drop-shadow-lg">
+						<h2 className="text-5xl font-extrabold text-transparent bg-gradient-to-r from-orange-300 to-slate-300 bg-clip-text amita drop-shadow-lg">
 							Kalki: The Crypto of New Beginnings
 						</h2>
 						<p className="text-lg text-slate-300 leading-relaxed">

@@ -28,7 +28,7 @@ const ContactSection = () => {
 		<div className="min-h-screen py-[10rem]">
 			<div className="max-w-6xl mx-auto px-4">
 				<div className="text-center mb-12">
-					<h2 className="text-5xl yuji-mai-regular font-extrabold  text-transparent bg-gradient-to-r from-orange-400 via-yellow-500 to-red-500 bg-clip-text mb-4">
+					<h2 className="text-5xl amita font-extrabold  text-transparent bg-gradient-to-r from-orange-300 to-slate-300  bg-clip-text mb-4">
 						Connect With Us
 					</h2>
 					<p className="text-slate-300 max-w-2xl mx-auto">
@@ -42,7 +42,7 @@ const ContactSection = () => {
 					<div className="md:col-span-1">
 						<Card className="backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl h-full">
 							<CardHeader>
-								<CardTitle className="text-xl font-bold text-transparent bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text">
+								<CardTitle className="text-xl font-bold text-white  bg-clip-text">
 									Join Our Community
 								</CardTitle>
 							</CardHeader>
@@ -80,7 +80,7 @@ const ContactSection = () => {
 					<div className="md:col-span-2">
 						<Card className="backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl">
 							<CardHeader>
-								<CardTitle className="text-xl font-bold text-transparent bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text">
+								<CardTitle className="text-xl font-bold text-white bg-clip-text">
 									Send Message
 								</CardTitle>
 							</CardHeader>
@@ -146,7 +146,7 @@ const ContactSection = () => {
 
 									<Button
 										type="submit"
-										className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold py-2 px-4 rounded-lg"
+										className="w-full bg-orange-500 hover:bg-orange-600 text-white  -white font-semibold py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-[102%]"
 										onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
 											e.preventDefault();
 											const mailtoLink = `mailto:support@kalki.finance?subject=${encodeURIComponent(
