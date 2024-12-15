@@ -23,7 +23,7 @@ const ShibaswapSection = () => {
 	return (
 		<div
 			ref={ref}
-			className="text-white py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-12 w-4/5 mx-auto"
+			className="text-white py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-12 w-8/10 md:w-4/5 mx-auto"
 		>
 			{/* Left Section */}
 			<div className="flex flex-col gap-6 w-full md:w-3/5 backdrop-blur-xl bg-white/10 rounded-2xl p-8 shadow-2xl shadow-white/10 border border-white/20 hover:border-white/30 transition-all duration-300">
